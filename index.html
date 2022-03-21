@@ -18,7 +18,13 @@
             }
         </script>
         <script src='https://pyweb.netlify.app/pyweb/pyweb.js'></script>
+        <script>
+            pyweb.__main__ = async () => {
+                await apyf('https://pyweb.netlify.app/examples/tabs/__init__.py')
+            }
+        </script>
     </head>
     <body>
+        <div id='pyweb'></div>
     </body>
 </html>
